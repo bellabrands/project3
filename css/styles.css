@@ -1,0 +1,57 @@
+body, h1, h2, h3, p {
+  margin: 1;
+  padding: 0;
+}
+
+body {
+  font-family: 'Payprus', cursive; 
+  line-height: 1.6;
+  background-color: #8B008B; 
+  color: #E9967A; 
+}
+
+ul.navbar {
+  background-color: #8FBC8F;
+  text-align: center;
+  list-style-type: none; 
+  padding: 0; 
+  display: flex;
+  justify-content: space-around; 
+  border-bottom: none;
+}
+
+ul.navbar li a {
+  font-family: 'Payprus', cursive; 
+  color: #5C4033; 
+  text-decoration: none;
+  display: block;
+  padding: 20px; 
+  font-size: 18px; 
+}
+
+ul.navbar li:first-child, ul.navbar li:last-child {
+  width: 32%; 
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #FF1493;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; 
+}
+
+h1, h2 {
+  color: #FF00FF; 
+}
+
+p {
+  margin-bottom: 20px;
+}
