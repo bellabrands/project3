@@ -1,38 +1,28 @@
-var map;
-function initMap() {
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Maps</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script async src="js/script.js"></script>
+</head>
 
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 41.8741, lng: -87.6285},
-    zoom: 15
-  });
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Resume</a></li>
+      <li><a href="f1.html">Formula 1</a></li>
+      <li><a href="fragrence.html">Cologne List</a></li>
+      <li><a href="maps.html">Google Maps</a></li>
+    </ul>
+  </nav>
+  <div id="map"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBQ3SmYCvO-wYZw1IQE_Ol2Kvx28T6Ty78&callback=initMap" async defer></script>
+  <section>
+    <h1>This is a route from my school to the approximate location of my house.</h1>
+  </section>
+</body>
 
-  var school = new google.maps.Marker({
-    position: { lat: 41.8730, lng: -87.6279},
-    map: map
-  });
-
-  var home = new google.maps.Marker({
-    position: { lat: 41.879077, lng: -87.655396 },
-    map: map
-  });
-
-  var distPoints = [
-    { lat: 41.872302, lng: -87.627616 },
-    { lat: 41.872283, lng: -87.6291424 },
-    { lat: 41.879416, lng: -87.629368 },
-    { lat: 41.879077, lng: -87.655396 },
-  ];
-
-  var dist = new google.maps.Polyline({
-    path: distPoints,
-    geodesic: true,
-    strokeColor: "#FE5F55",
-    strokeOpacity: 1.0,
-    strokeWeight: 2,
-  });
-
-  dist.setMap(map);
-
-}
-
-window.initMap = initMap;
+</html>
