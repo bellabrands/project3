@@ -50,7 +50,7 @@ async function initMap() {
   });
 
   const logos = {
-    Hero: {
+    Flacos Tacos: {
       icon: "media/flacostacos.png"
     },
 
@@ -58,7 +58,7 @@ async function initMap() {
       icon: "media/starbucks.png"
     },
 
-    Chipotle: {
+    Blaze Pizza: {
       icon: "media/blazepizza.png"
     }
   }
