@@ -8,16 +8,25 @@ body {
   line-height: 1.6;
   background-color: #8B008B; 
   color: #E9967A; 
+  max-width: 100%; 
 }
 
 ul.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #8FBC8F;
   text-align: center;
   list-style-type: none; 
   padding: 0; 
   display: flex;
   justify-content: space-around; 
-  border-bottom: none;
+  border: none;
+}
+
+ul.navbar li {
+  width; 25%;
 }
 
 ul.navbar li a {
@@ -25,33 +34,106 @@ ul.navbar li a {
   color: #5C4033; 
   text-decoration: none;
   display: block;
-  padding: 20px; 
-  font-size: 18px; 
-}
-
-ul.navbar li:first-child, ul.navbar li:last-child {
-  width: 32%; 
+  padding: 2%; 
+  font-size: 1.5rem; 
 }
 
 section {
   padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 90%;
+  margin: 8% auto 2%;
   background-color: #FF1493;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  clear: both;
 }
 
-img {
+section img {
   max-width: 100%;
   height: auto;
   border-radius: 5px; 
+  clear: both;
+}
+
+section ul{
+  list-style: none;
+}
+
+.image-container {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 2%;
+  float: left;
+  margin-right: 2%;
+  clear: left;
 }
 
 h1, h2 {
   color: #FF00FF; 
+  margin-top: 2%;
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 2%;
+  clear: both;
+}
+
+.slideshow-container{
+   max-width: 100%;
+  margin: 0 auto; 
+  overflow: hidden; 
+}
+
+.mySlides {
+  display: none;
+}
+
+#map {
+  height: 600px;
+  width: 100%
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-family: payprus;
+  }
+
+  .navbar {
+    font-size: x-large;
+  }
+
+  section {
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 65%;
+    color: rgb(56, 108, 204);
+    line-height: 125%;
+    background-color: rgb(217, 132, 207);
+  }
+
+  p {
+    color: rgb(130, 207, 139);
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    padding-top: 1.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 70%;
+    background-color: rgb(217, 132, 207);
+  }
+  p {
+    color: rgb(130, 207, 139);
+  }
+
 }
