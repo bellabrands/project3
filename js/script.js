@@ -28,7 +28,6 @@ function showSlides(num) {
 }
 
 let map;
-
 async function initMap() {
 
     const jcp = { lat: 41.87296, lng: -87.62791 };
