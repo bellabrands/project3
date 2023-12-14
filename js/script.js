@@ -51,15 +51,15 @@ async function initMap() {
 
   const logos = {
     Flacos Tacos: {
-      icon: "media/flacostacos.png"
+      icon: "media/flacoslogo.png"
     },
 
     Starbucks: {
-      icon: "media/starbucks.png"
+      icon: "media/starbuckslogo.png"
     },
 
     Blaze Pizza: {
-      icon: "media/blazepizza.png"
+      icon: "media/blazelogo.png"
     }
   }
   
