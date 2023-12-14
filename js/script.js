@@ -90,18 +90,14 @@ for (let i = 0; i < places.length; i++) {
     {lat: 41.87463, lng: -87.62763}, //corner
     {lat: 41.87461, lng: -87.62902},
     {lat: 41.87466, lng: -87.62901}, //starbucks
-    {lat: 41.87461, lng: -87.62902},
-    {lat: 41.87462, lng: -87.62916}, //corner
-    {lat: 41.87587, lng: -87.62917},
-    {lat: 41.87590, lng: -87.62906}, //hero
-    {lat: 41.87574, lng: -87.62917}, //corner
-    {lat: 41.87597, lng: -87.62607}, //corner
-    {lat: 41.86805, lng: -87.62589},
-    {lat: 41.86782, lng: -87.62614}, //chipotle
-    {lat: 41.86805, lng: -87.62589},
-    {lat: 41.87186, lng: -87.62597}, //corner
-    {lat: 41.87184, lng: -87.62766}, //corner
-    {lat: 41.87298, lng: -87.62774}
+    {lat:41.874435, lng: -87.629133},
+    {lat:41.872702, lng: -87.629062}, //Flacos Tacos
+    {lat:41.872357, lng: -87.629074}, //corner
+    {lat:41.872346, lng: -87.627545}, 
+    {lat:41.872417,lng:-87.627401},
+    {lat:41.875437, -87.627645}, //Blaze Pizza
+    
+   
   ];
 
   var path = new google.maps.Polyline({
