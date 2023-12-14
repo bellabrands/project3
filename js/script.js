@@ -76,7 +76,7 @@ async function initMap() {
     },
   ];
 
-  for (let i = 0; i < places.length; i++) {
+for (let i = 0; i < places.length; i++) {
     const marker = new google.maps.Marker({
       position: places[i].position,
       logo: logos[places[i].type].icon,
@@ -86,16 +86,24 @@ async function initMap() {
 
   var points = [
     {lat: 41.87296, lng: -87.62767}, //jcp
-    {lat: 41.874485, lng: -87.627658},
-    {lat: 41.874505, lng: -87.627524},
-    {lat: 41.875437, lng: -87.627645}, //blaze pizza
-    {lat: 41.875304, lng: -87.627727},
-    {lat: 41.874657, lng: -87.627689},
+    {lat: 41.87298, lng: -87.62774},
+    {lat: 41.87463, lng: -87.62763}, //corner
+    {lat: 41.87461, lng: -87.62902},
     {lat: 41.87466, lng: -87.62901}, //starbucks
-    {lat: 41.874437, lng: -87.629146},
-    {lat:41.872702, lng: -87.629062}, //flacos tacos
+    {lat: 41.87461, lng: -87.62902},
+    {lat: 41.87462, lng: -87.62916}, //corner
+    {lat: 41.87587, lng: -87.62917},
+    {lat: 41.87590, lng: -87.62906}, //hero
+    {lat: 41.87574, lng: -87.62917}, //corner
+    {lat: 41.87597, lng: -87.62607}, //corner
+    {lat: 41.86805, lng: -87.62589},
+    {lat: 41.86782, lng: -87.62614}, //chipotle
+    {lat: 41.86805, lng: -87.62589},
+    {lat: 41.87186, lng: -87.62597}, //corner
+    {lat: 41.87184, lng: -87.62766}, //corner
+    {lat: 41.87298, lng: -87.62774}
   ];
-  
+
   var path = new google.maps.Polyline({
     path: points,
     geodesic: true,
